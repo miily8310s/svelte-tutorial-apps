@@ -5,17 +5,10 @@
   import routes from './routes';
 </script>
 
-<main>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-  </p>
-  <p class=""><a href="#/simple">Simple App</a></p>
-  <p><a href="/">Top</a></p>
+<main class="min-h-screen bg-gray-300 p-6 flex flex-col sm:py-12">
+  <h1 class="text-center font-mono text-xl pb-2">Hello {name}!</h1>
+  <Router {routes} />
 </main>
-
-<Router {routes} />
 
 <style global lang="postcss">
   @tailwind base;
