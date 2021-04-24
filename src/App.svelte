@@ -5,8 +5,10 @@
   import routes from './routes';
 </script>
 
-<main class="min-h-screen bg-gray-300 p-6 flex flex-col sm:py-12">
-  <h1 class="text-center font-mono text-xl pb-2">Hello {name}!</h1>
+<main class="min-h-screen bg-gray-300 py-4 px-6 flex flex-col sm:py-10">
+  <h1 class="text-center font-mono text-xl pb-2">
+    <a href="/" class="text-green-400 hover:no-underline">Hello {name}!</a>
+  </h1>
   <Router {routes} />
 </main>
 

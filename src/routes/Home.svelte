@@ -5,14 +5,14 @@
     <div
       class="bg-gray-100 border-green-400 border-2 border-solid p-2 rounded-2xl cursor-pointer"
     >
-      <p><a href="#/simple">Simple App</a></p>
-      <p>hogehogehoge</p>
+      <p><a href="#/simple">Svelte Simple App</a></p>
+      <p>Topic:<span class="ml-1">Reactivity</span></p>
     </div>
     <div
       class="bg-gray-100 border-green-400 border-2 border-solid p-2 rounded-2xl cursor-pointer"
     >
       <p><a href="/">back to Top</a></p>
-      <p>hogehogehoge</p>
+      <p>Topic:<span class="ml-1">hogehogehoge</span></p>
     </div>
   </div>
 </div>
