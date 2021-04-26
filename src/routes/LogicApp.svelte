@@ -11,22 +11,27 @@
     { id: 'XfR9iY5y94s', name: 'Down Under' },
   ];
 
-  async function getUsers() {
+  interface User {
+    id: number;
+    name: string;
+    email: string;
+  }
+
+  let users: User[] = [];
+
+  const getUsers = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users/');
     const text = await res.json();
 
     if (res.ok) {
+      users = text;
       return text;
     } else {
       throw new Error(text);
     }
-  }
+  };
 
   let promise = getUsers();
-
-  function usersClick() {
-    promise = getUsers();
-  }
 </script>
 
 <div class="items-center text-center">
@@ -52,18 +57,17 @@
     </ul>
   </div>
   <div class="mt-6">
-    <button class="mb-3" on:click={usersClick}
-      >GET Users from JSON Placeholder</button
-    >
+    <ul class="flex flex-col items-center">
+      {#each users as user}
+        <li class="bg-gray-50 mb-2 block w-1/3 text-left pl-2">
+          {user.id}
+          {user.name}
+          <p class="pl-3">email: {user.email}</p>
+        </li>
+      {/each}
+    </ul>
     {#await promise}
       <p>...waiting</p>
-    {:then users}
-      <ul>
-        {#each users as user}
-          <li>{user.id} {user.name}</li>
-        {/each}
-      </ul>
-      <!-- <p>The number is {number.id}</p> -->
     {:catch error}
       <p style="color: red">{error.message}</p>
     {/await}
