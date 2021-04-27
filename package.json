@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9",
+    "marked": "^2.0.3",
     "postcss": "^7",
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.2.0",

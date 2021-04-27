@@ -1,4 +1,6 @@
 <script lang="ts">
+  import marked from 'marked';
+
   let str = 'Svelte';
   let a = 1;
   let b = 2;
@@ -7,6 +9,8 @@
   let selectedNumber = 1;
   let selectedMenu = ['pizza'];
   let menu = ['pizza', 'pasta', 'macaroni'];
+
+  let value = 'please text here.';
 </script>
 
 <h1 class="font-semibold">Text Inputs</h1>
@@ -57,8 +61,18 @@
   {#if selectedMenu.length === 0}
     <p>No selected one menu...</p>
   {:else if selectedMenu.length > selectedNumber}
-    <p>Can't select more menu</p>
+    <p>
+      Can't select more menu. <span
+        >{selectedMenu.length - selectedNumber} is over selectedNumber</span
+      >
+    </p>
   {:else}
     <p>You ordered {selectedMenu}</p>
   {/if}
+</div>
+
+<h1 class="font-semibold">Textarea Inputs</h1>
+<div class="border-red-900 border-2 p-2 mt-2">
+  <textarea class="w-full h-32" {value} />
+  {@html marked(value)}
 </div>
