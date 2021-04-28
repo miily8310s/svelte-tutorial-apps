@@ -11,6 +11,9 @@
   let menu = ['pizza', 'pasta', 'macaroni'];
 
   let value = 'please text here.';
+
+  let selected;
+  let questions = ['aaa', 'bbb', 'ccc'];
 </script>
 
 <h1 class="font-semibold">Text Inputs</h1>
@@ -75,4 +78,16 @@
 <div class="border-red-900 border-2 p-2 mt-2">
   <textarea class="w-full h-32" {value} />
   {@html marked(value)}
+</div>
+
+<h1 class="font-semibold">Select Inputs</h1>
+<div class="border-red-900 border-2 p-2 mt-2">
+  <select bind:value={selected}>
+    {#each questions as question}
+      <option value={question}>
+        {question}
+      </option>
+    {/each}
+  </select>
+  <p>Selected: {selected}</p>
 </div>
