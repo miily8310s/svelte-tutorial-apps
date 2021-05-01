@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fade } from 'svelte/transition';
+  import { fade, fly } from 'svelte/transition';
   let visible = true;
 </script>
 
@@ -7,4 +7,5 @@
 
 {#if visible}
   <p transition:fade>hoge hoge hoge</p>
+  <p transition:fly={{ y: 50, duration: 1500 }}>fly fly fly</p>
 {/if}
