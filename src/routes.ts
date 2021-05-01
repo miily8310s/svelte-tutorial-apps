@@ -7,6 +7,7 @@ import BindInputApp from './routes/BindInputApp.svelte';
 import LifeCycleApp from './routes/LifeCycleApp.svelte';
 import StoreApp from './routes/StoreApp.svelte';
 import MotionApp from './routes/MotionApp.svelte';
+import TransitionApp from './routes/TransitionApp.svelte';
 
 export default {
   '/': Home,
@@ -18,4 +19,5 @@ export default {
   '/lifecycle': LifeCycleApp,
   '/store': StoreApp,
   '/motion': MotionApp,
+  '/transition': TransitionApp,
 };
