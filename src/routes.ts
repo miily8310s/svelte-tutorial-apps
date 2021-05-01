@@ -6,6 +6,7 @@ import EventForwardApp from './routes/EventForwardApp.svelte';
 import BindInputApp from './routes/BindInputApp.svelte';
 import LifeCycleApp from './routes/LifeCycleApp.svelte';
 import StoreApp from './routes/StoreApp.svelte';
+import MotionApp from './routes/MotionApp.svelte';
 
 export default {
   '/': Home,
@@ -16,4 +17,5 @@ export default {
   '/input': BindInputApp,
   '/lifecycle': LifeCycleApp,
   '/store': StoreApp,
+  '/motion': MotionApp,
 };
