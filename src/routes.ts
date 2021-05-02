@@ -8,6 +8,7 @@ import LifeCycleApp from './routes/LifeCycleApp.svelte';
 import StoreApp from './routes/StoreApp.svelte';
 import MotionApp from './routes/MotionApp.svelte';
 import TransitionApp from './routes/TransitionApp.svelte';
+import ActionsApp from './routes/ActionsApp.svelte';
 
 export default {
   '/': Home,
@@ -20,4 +21,5 @@ export default {
   '/store': StoreApp,
   '/motion': MotionApp,
   '/transition': TransitionApp,
+  '/actions': ActionsApp,
 };
