@@ -60,7 +60,7 @@
       class="bg-gray-100 border-green-400 border-2 border-solid p-2 rounded-2xl cursor-pointer"
     >
       <p><a href="#/actions">Svelte Actions App</a></p>
-      <p>Topic:<span class="ml-1">Actions</span></p>
+      <p>Topic:<span class="ml-1">Actions/Classes</span></p>
     </div>
     <div
       class="bg-gray-100 border-green-400 border-2 border-solid p-2 rounded-2xl cursor-pointer"
