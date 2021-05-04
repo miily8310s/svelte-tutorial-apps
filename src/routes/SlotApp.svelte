@@ -6,3 +6,7 @@
   <h1>slot game!</h1>
   <h2 class="text-red-600 font-semibold">777!</h2>
 </BoxSlot>
+
+<p class="mt-2" />
+
+<BoxSlot />
