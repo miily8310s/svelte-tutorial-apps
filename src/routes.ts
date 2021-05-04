@@ -9,6 +9,7 @@ import StoreApp from './routes/StoreApp.svelte';
 import MotionApp from './routes/MotionApp.svelte';
 import TransitionApp from './routes/TransitionApp.svelte';
 import ActionsApp from './routes/ActionsApp.svelte';
+import SlotApp from './routes/SlotApp.svelte';
 
 export default {
   '/': Home,
@@ -22,4 +23,5 @@ export default {
   '/motion': MotionApp,
   '/transition': TransitionApp,
   '/actions': ActionsApp,
+  '/slot': SlotApp,
 };
